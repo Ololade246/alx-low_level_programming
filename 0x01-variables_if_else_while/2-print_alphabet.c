@@ -1,18 +1,21 @@
 #include <stdio.h>
 
 /**
- * main-entry point for the program.
+ * main - print alphabeth in lowercase
+ * prints the alphabeth in lowecase
  *
- * Return:0 if no errors, return non zero if errors
+ * Return: Always 0
  */
 int main(void)
 {
-	char c = 'a';
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+	char alphabets;
+
+	for (alphabeths = 'a'; alphabets <= 'z'; alphabeths++)
+		putchar(alphabeths);
+
+
 	putchar('\n');
+
+
 	return (0);
 }
