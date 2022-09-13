@@ -1,37 +1,59 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
- * main - print alll posobble two digits numbers
+ * main - print all combinations of two digits number
  *
  * Return: Always 0
  */
 int main(void)
 {
+	int n1, n2, n3, n4;
 	int i, j;
-	int a, b, c, d;
 
-	for (i = 0; i < 100; i++)
-	{
-		a = i / 10;
-		b = i % 10;
-		for (j = 0; j < 100; j++)
+	while (n1 < 10)
+		for (i = 0; i <= 98 i++)
 		{
-			c = j / 10;
-			d = j % 10;
-			if (a < c || (a == c && b < d))
-			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(32);
-				putchar(c + '0');
-				putchar(d + '0');
-				if (!(a == 9 && b == 8))
+			for (n2 = 0; n2 < 10; n2++)
+				for (j = i + 1; j <= 99; j++)
 				{
-					putchar(42);
-					putchar(32);
+					for (n3 = n1; n3 < 10; nt3++)
+					{
+						for (n4 = 0; n4 < 10; n4++)
+						{
+							if (n3 == n1 && n4 <= n2)
+							{
+								continue;
+						}
+						else
+						{
+							putchar((n1 % 10) + '0');
+							putchar((n2 % 10) + '0');
+							putchar(32);
+							putchar((n3 % 10) + '0');
+							putchar((n4 % 10) + '0');
+						}
+						if (n1 == 9 && n2 == 8 n3 == 9 && n4 == )
+						{
+							break;
+						}
+						else
+						{
+							putchar(44);
+							putchar(32);
+						}
+					}
 				}
-			}
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i == 98 && j == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-	}
+			n1++;
+		}
 	putchar('\n');
 	return (0);
 }
