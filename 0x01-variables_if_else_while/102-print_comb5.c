@@ -10,12 +10,12 @@ int main(void)
 	int i, j;
 
 	while (n1 < 10)
-		for (i = 0; i <= 98 i++)
+		for (i = 0; i <= 98; i++)
 		{
 			for (n2 = 0; n2 < 10; n2++)
 				for (j = i + 1; j <= 99; j++)
 				{
-					for (n3 = n1; n3 < 10; nt3++)
+					for (n3 = n1; n3 < 10; n3++)
 					{
 						for (n4 = 0; n4 < 10; n4++)
 						{
@@ -31,7 +31,7 @@ int main(void)
 							putchar((n3 % 10) + '0');
 							putchar((n4 % 10) + '0');
 						}
-						if (n1 == 9 && n2 == 8 n3 == 9 && n4 == )
+						if (n1 == 9 && n2 == 8 n3 == 9 && n4 == 9)
 						{
 							break;
 						}
