@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  * main - print all combinations of two digits number
  *
