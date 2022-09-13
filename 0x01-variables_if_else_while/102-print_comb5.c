@@ -31,7 +31,7 @@ int main(void)
 							putchar((n3 % 10) + '0');
 							putchar((n4 % 10) + '0');
 						}
-						if (n1 == 9 && n2 == 8 n3 == 9 && n4 == 9)
+						if (n1 == 9 && n2 == 8 && n3 == 9 && n4 == 9)
 						{
 							break;
 						}
