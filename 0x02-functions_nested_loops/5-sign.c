@@ -2,7 +2,6 @@
 /**
  * print_sign - function to check for a sign of a number
  * @c: is the int that will be use for argumet of the function
- *
  * Return: Always 0
  */
 int print_sign(int n)
