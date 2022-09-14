@@ -17,5 +17,5 @@ void print_time_table(int n);
 void num(int r, int n);
 
 #endif
-^c
+
 
