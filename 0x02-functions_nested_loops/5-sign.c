@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign - function that print the sign of a number
+ * print_sign - function to check for a sign of a number
  * @c: is the int that will be use for argumet of the function
  *
  * Return: Always 0
