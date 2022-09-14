@@ -2,6 +2,7 @@
 /**
  * main - print 10 times the alphabet
  *
+ * print_aplphabet_x10 - print the alphabeth x10
  * Return: Always 0
  */
 void print_alphabet_x10(void)
