@@ -21,13 +21,13 @@ int main(void)
 			hold2 = (b1 + b2) % LARGEST;
 			hold3 = fr1 + fr2 + hold1;
 			fr1 = fr2, fr2 = hold3;
-			bk1 = bk2, bk2 = hold2;
-			printf("%lu%010lu", fr2, bk2);
+			b1 = b2, b2 = hold2;
+			printf("%lu%010lu", fr2, b2);
 		}
 		else
 		{
 			hold2 = b1 + b2;
-			bk1 = b2, b2 = hold2;
+			b1 = b2, b2 = hold2;
 			printf("%lu", b2);
 		}
 		if (count != 97)
