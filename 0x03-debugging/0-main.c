@@ -1,6 +1,6 @@
 #include "main.h"
-/**
- * main - tests funtion that prints if interger is positive or negative
+/*
+ * main - Entry point
  *
  * Return: Always 0
  */
