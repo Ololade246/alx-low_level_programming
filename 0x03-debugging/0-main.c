@@ -1,6 +1,7 @@
 #include "main.h"
 /*
  * main - Entry point
+ * Description: function to test for negative or positive 
  *
  * Return: Always 0
  */
