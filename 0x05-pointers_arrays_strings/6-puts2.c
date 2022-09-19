@@ -1,7 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * puts2 - function that print only one character out of two
+ * puts2 - function that print only one character out of two starting with the first one 
  * @str: input variable
  *
  * Return: print
