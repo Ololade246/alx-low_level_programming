@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _atoi - Entry point
- * @s: string to convert
+ * _itoi - Entry point
+ * @s: input
  *
  * Return: Always 0
  */
