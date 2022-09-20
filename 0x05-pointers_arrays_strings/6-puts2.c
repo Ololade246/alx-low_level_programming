@@ -12,6 +12,6 @@ void puts2(char *str)
 
 	for (string = 0; str[string] != '\0'; string++)
 		if (string % 2 == 0)
-			putchar(str[sring]);
+			putchar(str[string]);
 	putchar('\n');
 }
