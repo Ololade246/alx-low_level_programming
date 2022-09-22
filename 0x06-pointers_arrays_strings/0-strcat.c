@@ -5,7 +5,7 @@
  * @dest: destiny value
  * @src: String value
  *
- *  Return: dest
+ *  Return: Always 0
  */
 char *_strcat(char *dest, char *src)
 {
