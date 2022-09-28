@@ -1,29 +1,33 @@
 #include "main.h"
 
 /**
- * is_prime_number - checks if a number is prime
- * @n: Number Integer
+ * comparar - function that returns the power of number
+ * @n: original number
+ * @y: counter to compare multiplication
  *
- * Return: Always 0
+ * Return: square root
+ */
+int comparar(int n, int y)
+{
+	int count = 0;
+
+	if (y <= n)
+	{
+		if (n % y == 0)
+			count++;
+		return (count + comparar(n, y + 1));
+	}
+	return (count);
+}
+/**
+ * is_prime_number - return 1 if is number prime
+ * @n: number to evaluate
+ * Return: 1 or 0
  */
 int is_prime_number(int n)
 {
-	return (prime(2, n));
-}
-/**
- * prime - Return if a number is primary or not
- * @i: Value ++.
- * @n: Value check.
- * Return: 1 and 0.
- */
-int prime(int i, int n)
-{
-	if (n <= 1)
-		return (0);
-	else if (i >= n)
+	if (comparar(n, 1) == 2)
 		return (1);
-	if (n % i != 0 && i != n)
-		return (prime(i + 1, n));
 	else
 		return (0);
 }
