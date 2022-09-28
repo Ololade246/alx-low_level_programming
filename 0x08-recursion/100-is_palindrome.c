@@ -3,7 +3,6 @@
 /**
  * longitud - function that returns the power of number
  * @s: string
- *
  * Return: length of a string
  */
 int longitud(char *s)
