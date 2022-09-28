@@ -1,13 +1,30 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of n
- * @n: Number Integer
+ * comparar - function that returns the power of number
+ * @n: original number
+ * @y: counter to compare multiplication
  *
- * Return: Always 0
+ * Return: square root
+ */
+int comparar(int n, int y)
+{
+	if (y * y == n)
+	{
+		return (y);
+	}
+	else if (y * y > n)
+	{
+		return (-1);
+	}
+	return (comparar(n, y + 1));
+}
+/**
+ * _sqrt_recursion - function that returns the power of number
+ * @n: number
+ * Return: the natural square root
  */
 int _sqrt_recursion(int n)
 {
-	int sqrt2;
-	return (sqrt2(n, 1));
+	return (comparar(n, 1));
 }
