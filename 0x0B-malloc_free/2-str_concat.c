@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * _strlen - return length of a string
  *
@@ -32,12 +31,14 @@ char *_strncat(char *dest, char *src, int n)
 		dest[dest_len + a] = src[a];
 	return (dest);
 }
+
 /**
  * *str_concat - function to allocate space for sting concatnation
  * @s1: array pointer to destination of string
  * @s2: array pointer to source of string
  * Return: return pointer to copy of string
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
