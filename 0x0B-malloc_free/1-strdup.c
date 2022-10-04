@@ -42,7 +42,7 @@ char *_strdup(char *str)
 		{
 			return (NULL);
 		}
-		ptr[x] = str[x]
+		ptr[x] = str[x];
 			x++;
 	}
 	return (ptr);
