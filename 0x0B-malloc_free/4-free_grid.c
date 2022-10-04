@@ -3,48 +3,23 @@
 #include <stdlib.h>
 
 /**
- * *argstostr - convert arguments on command line to strings
- * @ac: int type
- * @av: pointer to array
- * Return: arguments as strings
+ * free_grid - function to free memory
+ * @grid: pointer to grid of int type
+ * @height: int type
+ * Return: clean up memory
  */
 
-char *argstostr(int ac, char **av)
+void free_grid(int **grid, int height)
 {
-	int size, count, count1, count2 = 0;
-	char *ptr;
+	int y;
 
-	if (ac == 0 || av == NULL)
+	if (grid == NULL || grid == 0)
 	{
-		return (NULL);
+		return;
 	}
-
-	for (count = 0; count < ac; count++)
+	for (y = 0; y < height;  y++)
 	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
-		{
-			size += 1;
-		}
-		size += 1;
+		free(grid[y]);
 	}
-	size += 1;
-
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
-	{
-		free(ptr);
-		return (NULL);
-	}
-	for (count = 0; count < ac; count++)
-	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
-		{
-			ptr[count2] = av[count][count1];
-			count2++;
-		}
-		ptr[count2] = '\n';
-		count2++;
-	}
-	ptr[count2] = '\0';
-	return (ptr);
+	free(grid);
 }
